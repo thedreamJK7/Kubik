@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wifi {
+    background-color: rgba(0, 0, 0, 0.473);
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.w1 {
+    width: 500px;
+    height: 500px;
+    border: 50px solid transparent;
+    border-top: 50px solid black;
+    border-radius: 50%;
+    position: absolute;
+    animation-delay: 0.5s;
+}
+
+.w2 {
+    width: 350px;
+    height: 350px;
+    border: 50px solid transparent;
+    border-top: 50px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: 0.25s;
+}
+
+.w3 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.w {
+    animation-name: wifi;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wifi {
+    0% {
+        border-top-color: black;
+    }
+
+    25% {
+        border-top-color: rgba(0, 0, 0, 0.795);
+    }
+
+    50% {
+        border-top-color: rgba(0, 0, 0, 0.521);
+    }
+
+    75% {
+        border-top-color: rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        border-top-color: black;
+    }
+}
